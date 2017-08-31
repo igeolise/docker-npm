@@ -1,4 +1,6 @@
 docker-npm:
   build: .
+  container_name: docker-npm
   volumes:
-    - ./npm:/opt/npm/
+    - ./npm/:/opt/npm/
+    - /opt/npm/node_modules
