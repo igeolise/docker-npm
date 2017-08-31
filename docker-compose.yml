@@ -1,0 +1,4 @@
+docker-npm:
+  build: .
+  volumes:
+    - ./npm:/opt/npm/
