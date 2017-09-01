@@ -9,7 +9,3 @@ RUN apt-get update && \
 COPY ./npm/* /opt/npm/
 
 WORKDIR /opt/npm/
-
-RUN npm install --development
-
-ENTRYPOINT ["npm", "run", "generate"]
